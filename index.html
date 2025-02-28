@@ -1,0 +1,1436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&family=Dancing+Script:wght@400..700&family=Grechen+Fuemen&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&family=Cinzel:wght@400..900&family=Dancing+Script:wght@400..700&family=Grechen+Fuemen&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    body{
+        margin:0;
+        padding: 0;
+    }
+.main_div{
+    
+    height:140vh;
+    width:100%;
+    background: url("images/Untitled (2000 x 700 px) (2000 x 980 px).png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position:relative;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+.main_banner_headfirst{
+font-family: "Grechen Fuemen";
+font-size: 30px;
+color:rgb(8, 117, 103);
+position: relative;
+margin-left: 15%;
+}
+.main_banner_headfirst::before{
+    content: " ";
+    position: absolute;
+    height:1px;
+    width:70px;
+    background-color:rgb(255, 196, 0) ;
+    top:50%;
+    left:-16%;
+}
+.main_banner_head2{
+    font-family: "Cinzel";
+    font-weight: bold;
+    font-size: 60px;
+}
+.menu_content li{
+list-style: none;
+
+}
+.menu_content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    
+    margin-top: 15px;
+}
+.img_lg{
+    height:90%;
+    width:60%;
+    
+    background: url("https://dkkospseva.com/img/about.jpeg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 22px;
+    
+}
+.sm_img1{
+    height:40%;
+    width:35%;
+    border: 10px solid white;
+    background: url("https://dkkospseva.com/img/dip.jpeg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 40px;
+    position: absolute;
+    top:-10%;
+    left:40%;
+    animation: bounce 8s ease-in-out infinite;
+}
+@keyframes bounce {
+            0% {
+                top: 0;
+            }
+            50% {
+                top: -30px;
+            }
+            100% {
+                top: 0;
+            }
+        }
+.sm_img2{
+    height:43%;
+    width:40%;
+    border: 10px solid white;
+    background: url("https://dkkospseva.com/img/home.jpg");
+    
+    background-size: cover;
+    border-radius: 40px;
+    position: absolute;
+    top:55%;
+    left:48%;
+    animation: bounce2 8s ease-in-out infinite;
+}
+
+.swiper-slide{
+    padding: 1%;
+    border-radius: 25px;
+}
+.swiperimg{
+    height:50%;
+    width:100%;
+    border:1px solid rgb(219, 219, 219);
+    border-radius: 25px;
+}
+.practice_head1{
+    font-family: "Cinzel";
+    color:rgb(8, 117, 103);
+    text-align: center;
+    margin-top: 16px;
+}
+.keybtn{
+    width:250px;height:50px;border-radius: 50px;background-color:rgb(255, 196, 0) ;border: none;
+    color:rgb(8, 117, 103);
+
+}
+.swiper-content p{
+    font-size: 13px;
+}
+.nationalcontentdiv{
+    
+    height:400px;
+    padding:2%;
+    background-color: rgb(255, 196, 0);
+    border-radius: 25px;
+    transition: all 0.5s ;
+
+
+}
+.nationalcontentdiv:hover{
+    background-color: rgb(8, 117, 103);
+    cursor: pointer;
+}
+
+.nationa_head{
+    color:rgb(8, 117, 103);
+    font-family: "Cinzel";
+    font-weight: bold;
+}
+.nationa_writ{
+    font-size: 12px;
+
+}
+.nationa_btn{
+    width:200px;
+    height:40px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    background-color: rgb(8, 117, 103);
+    color:white
+}
+.nathead1{
+    color:rgb(8, 117, 103);
+}
+.nationalcontentdiv:hover .nationa_head{
+    color:white
+}
+.nationalcontentdiv:hover .nationa_writ{
+    color:white
+}
+.nationalcontentdiv:hover .nationa_btn{
+    background-color:rgb(255, 196, 0) ;
+}
+.contact_us{
+    height:100vh;
+
+    margin-top: 15vh;
+
+
+    background-color: rgb(194, 228, 219);
+    
+}
+
+.footer {
+ 
+ width:100%;
+  background: rgb(8, 117, 103);
+  border-radius: 6px;
+}
+.footer .footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3.5rem;
+  padding: 60px;
+}
+.footer-row .footer-col h4 {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.footer-col .links {
+  margin-top: 20px;
+}
+.footer-col .links li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+.footer-col .links li a {
+  text-decoration: none;
+  color: #bfbfbf;
+}
+.footer-col .links li a:hover {
+  color: #fff;
+}
+.footer-col p {
+  margin: 20px 0;
+  color: #bfbfbf;
+  max-width: 300px;
+}
+.footer-col form {
+  display: flex;
+  gap: 5px;
+}
+.footer-col input {
+  height: 40px;
+  border-radius: 6px;
+  background: none;
+  width: 100%;
+  outline: none;
+  border: 1px solid #7489C6 ;
+  caret-color: #fff;
+  color: #fff;
+  padding-left: 10px;
+}
+.footer-col input::placeholder {
+  color: #ccc;
+}
+ .footer-col form button {
+  background: #fff;
+  outline: none;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+.footer-col form button:hover {
+  background: #cecccc;
+}
+.footer-col .icons {
+  display: flex;
+  margin-top: 30px;
+  gap: 30px;
+  cursor: pointer;
+}
+.footer-col .icons i {
+  color: #afb6c7;
+}
+.footer-col .icons i:hover  {
+  color: #fff;
+}
+@media (max-width: 768px) {
+  .footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
+    border-radius: 0;
+  }
+  .footer .footer-row {
+    padding: 20px;
+    gap: 1rem;
+  }
+  .footer-col form {
+    display: block;
+  }
+  .footer-col form :where(input, button) {
+    width: 100%;
+  }
+  .footer-col form button {
+    margin: 10px 0 0 0;
+  }
+}
+
+@media screen and (min-device-width: 300px) and (max-device-width: 768px) { 
+   .ban_sm_img{
+    display: none;
+   }
+
+   .main_div {
+    height: 170vh;
+    width: 100%;
+    background: url('images/Untitled (2000 x 700 px) (2000 x 980 px).png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+.sm_feat_box{
+    height:64%;
+}
+.feat{
+    top:85vh;
+}
+.lg_ban_im{
+    width: 800px;
+    height: 89vh;
+}
+.headings_div{
+    top:5%;
+}
+.sm_img1{
+    width:58%
+}
+.sm_img2{
+    width:50%
+}
+.swiper {
+  width: 100%;
+  height:50vh;
+ 
+}
+.img_hover_div {
+    position: absolute;
+    top:100px;
+    
+    width: 120px;
+    height: 110px;
+    position: absolute;
+    opacity: 1;
+    transition: width 0.8s ease-in-out, height 0.8s ease-in-out, opacity 0.5s ease-in-out;
+    left: 89px;
+  
+
+}
+}
+
+@media screen and (min-device-width: 800px) and (max-device-width: 1500px) { 
+   
+.sm_feat_box{
+    height:100%;
+}
+.feat{
+    top:104vh;
+}
+.lg_ban_im{
+    width: 800px;
+    height: 140vh;
+}
+.headings_div{
+    top:20%;
+}
+.swiper {
+  width: 100%;
+  height:70vh;
+ 
+}
+.img_hover_div {
+    position: absolute;
+    top:100px;
+    
+    width: 120px;
+    height: 110px;
+    position: absolute;
+    opacity: 1;
+    transition: width 0.8s ease-in-out, height 0.8s ease-in-out, opacity 0.5s ease-in-out;
+    left: 77px;
+    
+
+}
+
+}
+.swiperimg{
+    height:30vh;
+}
+
+.col{
+    overflow: hidden;
+}
+.col img{
+    height: 293px;
+}
+
+.imgc{
+    transition: transform 500ms ease-out
+}
+.animate_box{
+    overflow: hidden;
+    position: relative;
+}
+.animate_box:hover .imgc {
+    transform: scale(1.5); /* Smooth scaling effect */
+    
+}
+.col:hover .img_hover_div {
+    background-color: rgb(255, 196, 0);
+    top:55px;
+    
+    opacity: 0.8;
+    scale:calc(2.5);
+    transition: 1s;
+}
+.img_hover_div{
+    justify-self: center;
+}
+#services img{
+    position: relative;
+}
+
+@keyframes slideInTop {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  #services h1{
+    animation: slideInTop 2.5s ease-out forwards;
+    animation-fill-mode: forwards;
+  }
+  #services p{
+    animation: slideInLeft 2.5s ease-out forwards;
+    animation-fill-mode: forwards;
+  }
+
+  .overlay_text{
+    top: 60px;
+    left: 90px;
+    right: 90px;
+    color: white;
+    display:none;
+    font-size: 19px;
+    
+  }
+  .col:hover .overlay_text{
+    display: inline;
+  }
+
+
+  @keyframes slideInReft {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+.overlay_text i{
+    font-size: 40px;
+}
+
+.text_before_hover{
+    top: 100px;
+    left: 90px;
+    color: white;
+}
+.col:hover .text_before_hover{
+    display: none;
+  }
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* MOBILE */
+
+@media (max-width:575){
+    #services h1{
+        font-size: 30px;
+        font-weight: 600;
+        color: #58bed3;
+    }
+    #services h2{
+        font-weight: 600;
+        font-size: 100px;
+    }
+}
+
+
+
+
+/* TABLET */
+@media (min-width:576px) and (max-width:999px){
+    #services h1{
+        font-size: 60px;
+        font-weight: 600;
+        color: #58bed3;
+    }
+    #services h2{
+        font-weight: 600;
+       
+    }
+}
+
+
+
+
+
+
+
+/*  DESKTOP SCREEN */
+
+@media (min-width:1000px) and (max-width:1600px){
+    #services h1{
+        font-size: 60px;
+        font-weight: 600;
+        color: #58bed3;
+    }
+    #services h2{
+        font-weight: 600;
+       
+    }
+    .fs{
+        font-size: 20px;
+    }
+}
+
+
+.main_icon_writ{
+   
+    top:20%;
+    left:10%;
+    width:80%;
+
+}
+.contact-form{
+width:100%;
+
+
+margin-top: 5vh;
+
+}
+.left-img-con{
+background: url("images/Flux_Dev_Highresolution_stock_photo_depicting_a_vibrant_and_jo_2.jpeg");
+background-position: center;
+background-size: cover;
+height:100vh;
+
+}
+#exampleInputEmail1, #exampleFormControlTextarea1{
+    border: 1px solid rgb(8, 117, 103);
+}
+</style>
+<body>
+    <nav class="container-fluid d-lg-block d-none" style="height:100px;padding-left:5%;padding-right:5%;position: fixed;z-index: 9999;background-color: white;">
+        <div class="row" style="height:80px;">
+            <div class="col-lg-2" style="padding-left:1%;height:100%;padding-right: 1%;padding-top: 8px;padding-bottom: 8px;">
+               <div class="logo" style="height:100%;width:100%;border:1px solid white">
+                    Logo
+               </div>
+            </div>
+            <div class="col-lg-7" style="padding-left:2%;height:100%;padding-right: 2%;padding-top: 8px;padding-bottom: 8px;">
+                <div class="menu" style="height:100%;width:100%;border:1px solid white;background-color:rgb(8, 117, 103) ;color:white;border-radius: 50px;">
+                    <ul class="menu_content">
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Donation</li>
+                        <li>Srvices</li>
+                        <li>Conatct Us</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-1" style="padding-left:2%;height:100%;padding-right: 2%;padding-top: 8px;padding-bottom: 8px;">
+                <div class="search" style="height:60px;width:60px;border-radius: 100%;background-color: rgb(255, 196, 0);display: flex;justify-content: center;align-items: center;">
+                    <i class="fas fa-search" style="color:rgb(8, 117, 103)"></i>
+                </div>
+
+            </div>
+            <div class="col-lg-2" >
+               
+
+            </div>
+
+        </div>
+
+    </nav>
+    <div class="main_div container-fluid">
+        <div class="row">
+            <div class="col-lg-6" style="position:relative;">
+                <div class="headings_div" style="z-index:1000;position:absolute;padding-left:8%;padding-right: 5%;">
+                    <h6 class="main_banner_headfirst">Give Hope For Homeless</h6>
+                    <br>
+                    <h1 class="main_banner_head2">Donate For A Better <span style="color:rgb(255, 196, 0)">World</span></h1>
+                    <br>
+                    <h6>Explore The Variety Of volunteer opportunities  administrative support</h6>
+                    <br>
+                    <button style="width:200px;height:50px;border-radius: 50px;background-color: rgb(8, 117, 103);color:white;border:none;outline:none">Explore</button>
+                </div>
+                <img class="lg_ban_im" src="images/Untitled design (99).png" style="width:800px;">
+                
+                
+
+            </div>
+            <div class="col-lg-6">
+
+            </div>
+
+        </div>
+        <div class="row" style="padding: 0;margin: 0;border:1px solid red;height:300px">
+            <div class="col-lg-12"  style="padding: 0;margin: 0;">
+                <img class="ban_sm_img" src="images/Untitled design - 2025-02-12T232944.260.png" style="z-index: 1000;width:100%;height:70vh;position: absolute;top:50%">
+                <div class="feat" style="width: 61vw;height:37vh;;z-index: 1000;position: absolute;left: 39%;">
+                    <div class="container-fluid" style="height:100%;width:100%">
+                        <div class="row" style="height:100%;">
+                            <div class="col-lg-4 sm_feat_box" style="padding: 2%;" >
+                                <div style="height:100%;width:100%;border: 3px solid white;border-radius: 20px;background-color: rgb(255, 196, 0);padding: 2%;">
+                                        <h6 style="text-align: center;color: rgb(8, 117, 103);">Fund Raising</h6>
+                                        <p style="text-align: center;color:rgb(8, 117, 103)">Lorem ipsum dolor sit amet consectetur adipisicing elit. Offici</p>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-4 sm_feat_box" style="padding: 2%;">
+                                <div style="height:100%;width:100%;border: 1px solid white;border-radius: 20px;background-color: rgb(255, 196, 0);padding: 2%;">
+                                    <h6 style="text-align: center;color:rgb(8, 117, 103)">Charity Donate</h6>
+                                    <p style="text-align: center;color:rgb(8, 117, 103)">Lorem ipsum dolor sit amet consectetur adipisicing elit. Offici</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 sm_feat_box" style="padding: 2%;">
+                                <div style="height:100%;width:100%;border: 1px solid white;border-radius: 20px;background-color: rgb(255, 196, 0);padding: 2%;">
+                                    <h6 style="text-align: center;color:rgb(8, 117, 103)">Charity Donate</h6>
+                                    <p style="text-align: center;color:rgb(8, 117, 103)">Lorem ipsum dolor sit amet consectetur adipisicing elit. Offici</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            
+        </div>
+
+
+    </div>
+    <div class="abt_div container-fluid" style="margin-top: 20vh;">
+        <div class="row" >
+            <div class="col-lg-6" style="padding:2%;align-content: center;position: relative;height: 80vh;">
+                  <div class="img_lg">
+
+                  </div>
+                  <div class="sm_img1">
+
+                  </div>
+                  <div class="sm_img2">
+
+                  </div>
+            </div>
+            <div class="col-lg-6" style="height:100%;padding: 2%;height:80vh">
+                <h3 style="font-family: Grechen Fuemen;color:rgb(8, 117, 103);">About Us</h3>
+                <h2 style="color: rgb(255, 196, 0);font-size: 25px;">A Social Organization dedicated in Human Services</h2>
+                <p style="text-align: justify;line-height: 4vh;font-size: 13px;">The dedicated Social Organization purely working for the development of our society through various Activities and Programmes also provide different Services to the people; specially for underprivileged section for the last 50 years with the Ideology & guideline of Sri Ajay Kumar Das, our beloved Founder.
+                    The dedicated Social Organization purely working for the development of our society through various Activities and Programmes also provide different Services to the people; specially for underprivileged section for the last 50 years with the Ideology & guideline of Sri Ajay Kumar Das, our beloved Founder. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae non vel vero recusandae et laboriosam ipsa est magnam blanditiis, sit possimus laborum alias nihil voluptatem quos cumque facere magni dignissimos! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, fugit pariatur sunt, aliquam suscipit expedita voluptatem molestias, dignissimos repellendus minima blanditiis iusto culpa quos rerum harum facilis officiis dicta at.
+                </p>
+            </div>
+        </div>
+        
+
+    </div>
+     <div class="major_activity container-fluid" style="margin-top:4vh;">
+        <h3 style="font-family: Grechen Fuemen;color:rgb(8, 117, 103);text-align: center;">
+            Our Major Activities
+        </h3>
+        <h2 style="text-align: center;color: rgb(255, 196, 0)">We are In a Mission To Help The Helpless</h2>
+        <div class="swiper" style="margin-top: 4vh;">
+           
+            <div class="swiper-wrapper">
+              
+              <div class="swiper-slide" style="border:1px solid rgb(206, 206, 206)">
+                <div class="swiperimg" >
+
+                </div>
+                <div class="swiper-content">
+                   <h6 class="practice_head1" >
+                         Seva Medical Unit
+                   </h6>
+                   <div class="content_writ" style="height:30%">
+                    <p>
+                        Our dedicated medical unit is committed to providing accessible and affordable healthcare services to underserved communities.
+                       </p>
+                   </div>
+                   
+
+                </div>
+                <div style="display:flex;justify-content: center;width:100%">
+                    <button class="keybtn">
+                        Learn More
+                    </button>
+                </div>
+                
+              </div>
+              <div class="swiper-slide" style="border:1px solid rgb(206, 206, 206)">
+                <div class="swiperimg" style="background: url('https://dkkospseva.com/img/about2.jpeg');background-size: cover;background-position: center;">
+
+                </div>
+                <div class="swiper-content">
+                   <h6 class="practice_head1" >
+                         Save Child Development & Education
+                   </h6>
+                   <div class="content_writ" style="height:30%">
+                    <p>
+                        Our dedicated medical unit is committed to providing accessible and affordable healthcare services to underserved communities.
+                       </p>
+                   </div>
+                   <div style="display:flex;justify-content: center;width:100%">
+                    <button class="keybtn">
+                        Learn More
+                    </button>
+                   </div>
+                </div>
+              </div>
+              <div class="swiper-slide" style="border:1px solid rgb(206, 206, 206)">
+                <div class="swiperimg" style="background: url('https://dkkospseva.com/img/about.jpeg');background-size: cover;background-position: center;">
+
+                </div>
+                <div class="swiper-content">
+                   <h6 class="practice_head1" >
+                         Seva Vocational Training
+                   </h6>
+                   <div class="content_writ" style="height:30%">
+                    <p>
+                        Our dedicated medical unit is committed to providing accessible and affordable healthcare services to underserved communities.
+                       </p>
+                   </div>
+
+                </div>
+                <div style="display:flex;justify-content: center;width:100%">
+                    <button class="keybtn">
+                        Learn More
+                    </button>
+                </div>
+              </div>
+              <div class="swiper-slide" style="border:1px solid rgb(206, 206, 206)">
+                <div class="swiperimg" style="background: url('https://dkkospseva.com/img/ro.jpeg');background-size: cover;background-position: center;">
+
+                </div>
+                <div class="swiper-content">
+                   <h6 class="practice_head1" >
+                         Seva Rural Development Unit
+                   </h6>
+                   <div class="content_writ" style="height:30%">
+                    <p>
+                        Our dedicated medical unit is committed to providing accessible and affordable healthcare services to underserved communities.
+                       </p>
+                   </div>
+
+                </div>
+                <div style="display:flex;justify-content: center;width:100%">
+                    <button class="keybtn">
+                        Learn More
+                    </button>
+                </div>
+              </div>
+              <div class="swiper-slide" style="border:1px solid rgb(206, 206, 206)">
+                <div class="swiperimg" style="background: url('https://dkkospseva.com/img/ag.jpeg');background-size: cover;background-position: center;">
+
+                </div>
+                <div class="swiper-content">
+                   <h6 class="practice_head1" >
+                         Seva Agricultural Development Unit
+                   </h6>
+                   <div class="content_writ" style="height:30%">
+                    <p>
+                        Our dedicated medical unit is committed to providing accessible and affordable healthcare services to underserved communities.
+                       </p>
+                   </div>
+
+                </div>
+                <div style="display:flex;justify-content: center;width:100%">
+                    <button class="keybtn">
+                        Learn More
+                    </button>
+                </div>
+              </div>
+              <div class="swiper-slide" style="border:1px solid rgb(206, 206, 206)">
+                <div class="swiperimg" style="background: url('https://dkkospseva.com/img/culture.jpeg');background-size: cover;background-position: center;">
+
+                </div>
+                <div class="swiper-content">
+                   <h6 class="practice_head1" >
+                         Seva Cultural Development Unit
+                   </h6>
+                   <div class="content_writ" style="height:30%">
+                    <p>
+                        Our dedicated medical unit is committed to providing accessible and affordable healthcare services to underserved communities.
+                       </p>
+                   </div>
+                </div>
+                <div style="display:flex;justify-content: center;width:100%">
+                    <button class="keybtn">
+                        Learn More
+                    </button>
+                </div>
+              </div>
+              <div class="swiper-slide" style="border:1px solid rgb(206, 206, 206)">
+                <div class="swiperimg" style="background: url('https://dkkospseva.com/img/solar.jpeg');background-size: cover;background-position: center;">
+
+                </div>
+                <div class="swiper-content">
+                   <h6 class="practice_head1" >
+                         Seva Solar Development Unit
+                   </h6>
+                   <div class="content_writ" style="height:30%">
+                    <p>
+                        Our dedicated medical unit is committed to providing accessible and affordable healthcare services to underserved communities.
+                       </p>
+                   </div>
+
+                </div>
+                <div style="display:flex;justify-content: center;width:100%">
+                    <button class="keybtn">
+                        Learn More
+                    </button>
+                </div>
+              </div>
+              <div class="swiper-slide" style="border:1px solid rgb(206, 206, 206)">
+                <div class="swiperimg" style="background: url('https://dkkospseva.com/img/vo.jpeg');background-size: cover;background-position: center;">
+
+                </div>
+                <div class="swiper-content">
+                   <h6 class="practice_head1" >
+                         Seva Awareness Programme
+                   </h6>
+                   <div class="content_writ" style="height:30%">
+                    <p>
+                        Our dedicated medical unit is committed to providing accessible and affordable healthcare services to underserved communities.
+                       </p>
+                   </div>
+
+                </div>
+                <div style="display:flex;justify-content: center;width:100%">
+                    <button class="keybtn">
+                        Learn More
+                    </button>
+                </div>
+              </div>
+              <div class="swiper-slide" style="border:1px solid rgb(206, 206, 206)">
+                <div class="swiperimg" style="background: url('https://dkkospseva.com/img/relief.jpeg');background-size: cover;background-position: center;">
+
+                </div>
+                <div class="swiper-content">
+                   <h6 class="practice_head1" >
+                         Seva Relief Unit
+                   </h6>
+                   <div class="content_writ" style="height:30%">
+                    <p>
+                        Our dedicated medical unit is committed to providing accessible and affordable healthcare services to underserved communities.
+                       </p>
+                   </div>
+                </div>
+                <div style="display:flex;justify-content: center;width:100%">
+                    <button class="keybtn">
+                        Learn More
+                    </button>
+                </div>
+              </div>
+            
+            </div>
+           
+            <div class="swiper-pagination"></div>
+          
+           
+           
+          
+           
+            
+          </div>
+    </div> 
+
+    <section id="services">
+        <br>
+        <br>
+        <h3 style="font-family: Grechen Fuemen;color:rgb(8, 117, 103);text-align: center;">
+            Our National and State Level Programme
+        </h3>
+       
+        <h2 style="text-align: center;color: rgb(255, 196, 0)">National Programme for Cultural Integration</h2>
+        <br>
+        <br>
+        <div class="container">
+          
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+  
+              <div class="col position-relative">
+                  
+                  <div class="animate_box" style="justify-items: center;align-content: center;">
+                  <div style="position: relative;">
+                  <img src="  https://dkkospseva.com/img/Swami.jpeg" alt="" class="w-100 imgc" />
+                  <div style="width:100%;height:100%;background-color: black;position: absolute;top:0;left:0;z-index: 9;opacity: 0.3;">
+                  </div>
+                  </div>
+                  
+                  <div  class="img_hover_div position-absolute m-5" ></div>
+                  <div class="main_icon_writ position-absolute text_before_hover" style="z-index:99">
+                   <i class="fa-solid fa-plane-departure text-white  text-center"></i>
+                  <hr/>
+                  <h2 style="font-size: 30px;font-weight: bolder;">Swami Vivekananda Seva Excellence Award</h2>
+                 </div>
+                 
+                  <div class="position-absolute overlay_text" style="z-index:99">
+                  <i class="fa-solid fa-plane-departure text-white  text-center"></i>
+                  <hr/>
+                  <h2 style="font-size: 20px;font-weight: bolder;">Swami Vivekananda Seva Excellence Award</h2>
+                    <p style="font-size: 10px;">The Swami Vivekananda Seva Excellence Award is an honor bestowed by our Organisation to individuals and organizations that have demonstrated exceptional dedication to social service and community development</p>
+                    </div>
+                  </div>
+              </div>  
+               <div class="col position-relative">
+                  
+                  <div class="animate_box" style="justify-items: center;align-content: center;">
+                  <div style="position: relative;">
+                  <img src=" https://dkkospseva.com/img/kab.jpeg" alt="" class="w-100 imgc" />
+                  <div style="width:100%;height:100%;background-color: black;position: absolute;top:0;left:0;z-index: 9;opacity: 0.3;">
+                  </div>
+                  </div>
+                  
+                  <div  class="img_hover_div position-absolute m-5" ></div>
+                  <div class="main_icon_writ position-absolute text_before_hover" style="z-index:99">
+                   <i class="fa-solid fa-plane-departure text-white  text-center"></i>
+                  <hr/>
+                  <h2 style="font-size: 30px;font-weight: bolder;">Swami Vivekananda Seva Excellence Award</h2>
+                 </div>
+                 
+                  <div class="position-absolute overlay_text" style="z-index:99">
+                  <i class="fa-solid fa-plane-departure text-white  text-center"></i>
+                  <hr/>
+                  <h2 style="font-size: 20px;font-weight: bolder;">Swami Vivekananda Seva Excellence Award</h2>
+                    <p style="font-size: 10px;">The Swami Vivekananda Seva Excellence Award is an honor bestowed by our Organisation to individuals and organizations that have demonstrated exceptional dedication to social service and community development</p>
+                    </div>
+                  </div>
+              </div> 
+               <div class="col position-relative">
+                  
+                  <div class="animate_box" style="justify-items: center;align-content: center;">
+                  <div style="position: relative;">
+                  <img src="  https://dkkospseva.com/img/one%20(1).jpeg" alt="" class="w-100 imgc" />
+                  <div style="width:100%;height:100%;background-color: black;position: absolute;top:0;left:0;z-index: 9;opacity: 0.3;">
+                  </div>
+                  </div>
+                  
+                  <div  class="img_hover_div position-absolute m-5" ></div>
+                  <div class="main_icon_writ position-absolute text_before_hover" style="z-index:99">
+                   <i class="fa-solid fa-plane-departure text-white  text-center"></i>
+                  <hr/>
+                  <h2 style="font-size: 30px;font-weight: bolder;">Swami Vivekananda Seva Excellence Award</h2>
+                 </div>
+                 
+                  <div class="position-absolute overlay_text" style="z-index:99">
+                  <i class="fa-solid fa-plane-departure text-white  text-center"></i>
+                  <hr/>
+                  <h2 style="font-size: 20px;font-weight: bolder;">Swami Vivekananda Seva Excellence Award</h2>
+                    <p style="font-size: 10px;">The Swami Vivekananda Seva Excellence Award is an honor bestowed by our Organisation to individuals and organizations that have demonstrated exceptional dedication to social service and community development</p>
+                    </div>
+                  </div>
+              </div> 
+              <div class="col position-relative">
+                  
+                  <div class="animate_box" style="justify-items: center;align-content: center;">
+                  <div style="position: relative;">
+                  <img src=" https://dkkospseva.com/img/sa.jpeg" alt="" class="w-100 imgc" />
+                  <div style="width:100%;height:100%;background-color: black;position: absolute;top:0;left:0;z-index: 9;opacity: 0.3;">
+                  </div>
+                  </div>
+                  
+                  <div  class="img_hover_div position-absolute m-5" ></div>
+                  <div class="main_icon_writ position-absolute text_before_hover" style="z-index:99">
+                   <i class="fa-solid fa-plane-departure text-white  text-center"></i>
+                  <hr/>
+                  <h2 style="font-size: 30px;font-weight: bolder;">Swami Vivekananda Seva Excellence Award</h2>
+                 </div>
+                 
+                  <div class="position-absolute overlay_text" style="z-index:99">
+                  <i class="fa-solid fa-plane-departure text-white  text-center"></i>
+                  <hr/>
+                  <h2 style="font-size: 20px;font-weight: bolder;">Swami Vivekananda Seva Excellence Award</h2>
+                    <p style="font-size: 10px;">The Swami Vivekananda Seva Excellence Award is an honor bestowed by our Organisation to individuals and organizations that have demonstrated exceptional dedication to social service and community development</p>
+                    </div>
+                  </div>
+              </div> 
+              <div class="col position-relative">
+                  
+                  <div class="animate_box" style="justify-items: center;align-content: center;">
+                  <div style="position: relative;">
+                  <img src="  https://dkkospseva.com/img/dip1.jpeg" alt="" class="w-100 imgc" />
+                  <div style="width:100%;height:100%;background-color: black;position: absolute;top:0;left:0;z-index: 9;opacity: 0.3;">
+                  </div>
+                  </div>
+                  
+                  <div  class="img_hover_div position-absolute m-5" ></div>
+                  <div class="main_icon_writ position-absolute text_before_hover" style="z-index:99">
+                   <i class="fa-solid fa-plane-departure text-white  text-center"></i>
+                  <hr/>
+                  <h2 style="font-size: 30px;font-weight: bolder;">Swami Vivekananda Seva Excellence Award</h2>
+                 </div>
+                 
+                  <div class="position-absolute overlay_text" style="z-index:99">
+                  <i class="fa-solid fa-plane-departure text-white  text-center"></i>
+                  <hr/>
+                  <h2 style="font-size: 20px;font-weight: bolder;">Swami Vivekananda Seva Excellence Award</h2>
+                    <p style="font-size: 10px;">The Swami Vivekananda Seva Excellence Award is an honor bestowed by our Organisation to individuals and organizations that have demonstrated exceptional dedication to social service and community development</p>
+                    </div>
+                  </div>
+              </div>  
+               <div class="col position-relative">
+                  
+                  <div class="animate_box" style="justify-items: center;align-content: center;">
+                  <div style="position: relative;">
+                  <img src="  https://dkkospseva.com/img/utsav.jpeg" alt="" class="w-100 imgc" />
+                  <div style="width:100%;height:100%;background-color: black;position: absolute;top:0;left:0;z-index: 9;opacity: 0.3;">
+                  </div>
+                  </div>
+                  
+                  <div  class="img_hover_div position-absolute m-5" ></div>
+                  <div class="main_icon_writ position-absolute text_before_hover" style="z-index:99">
+                   <i class="fa-solid fa-plane-departure text-white  text-center"></i>
+                  <hr/>
+                  <h2 style="font-size: 30px;font-weight: bolder;">Swami Vivekananda Seva Excellence Award</h2>
+                 </div>
+                 
+                  <div class="position-absolute overlay_text" style="z-index:99">
+                  <i class="fa-solid fa-plane-departure text-white  text-center"></i>
+                  <hr/>
+                  <h2 style="font-size: 20px;font-weight: bolder;">Swami Vivekananda Seva Excellence Award</h2>
+                    <p style="font-size: 10px;">The Swami Vivekananda Seva Excellence Award is an honor bestowed by our Organisation to individuals and organizations that have demonstrated exceptional dedication to social service and community development</p>
+                    </div>
+                  </div>
+              </div> 
+          </div>
+        </div>
+      </section>
+    <!-- <div class="National_Programme container-fluid" style="margin-top:10vh;padding-left: 2%;padding-right: 2%;">
+        <h3 class="nathead1" style="font-family: Grechen Fuemen;text-align: center;">
+            Our National and State Level Programme
+        </h3>
+        <h2 style="text-align: center;color: rgb(255, 196, 0)">National Programme for Cultural Integration</h2>
+        <div class="row" >
+            <div class="col-lg-3 " style="padding: 2%;" >
+                <div class="nationalcontentdiv">
+                    <div class="nationaimg_div" style="height:40%;border:10px solid rgb(255, 255, 255);border-radius: 25px;background-image: url('https://dkkospseva.com/img/Swami.jpeg');background-size: cover;background-position: center;">
+
+                    </div>
+                    <div class="national_writing" style="height:48%;align-content: center; padding: 3%;" >
+                         <h5 class="nationa_head" >
+                            Swami Vivekananda Seva Excellence Award
+                         </h5>
+                         <p class="nationa_writ" style="align-content: center;font-family: Poppins;">
+                                 The Swami Vivekananda Seva Excellence Award is an honor bestowed by our Organisation to individuals and organizations that have demonstrated exceptional dedication to social service and community development
+                         </p>
+                    </div>
+                    <div style="display: flex;justify-content: center;">
+                        <button class="nationa_btn">
+                             Join Now
+                        </button>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-lg-3 " style="padding: 2%;" >
+                <div class="nationalcontentdiv">
+                    <div class="nationaimg_div" style="height:40%;border:10px solid rgb(255, 255, 255);border-radius: 25px;background-image: url('https://dkkospseva.com/img/Swami.jpeg');background-size: cover;background-position: center;">
+
+                    </div>
+                    <div class="national_writing" style="height:48%;align-content: center; padding: 3%;" >
+                         <h5 class="nationa_head" >
+                            Swami Vivekananda Seva Excellence Award
+                         </h5>
+                         <p class="nationa_writ" style="align-content: center;font-family: Poppins;">
+                                 The Swami Vivekananda Seva Excellence Award is an honor bestowed by our Organisation to individuals and organizations that have demonstrated exceptional dedication to social service and community development
+                         </p>
+                    </div>
+                    <div style="display: flex;justify-content: center;">
+                        <button class="nationa_btn">
+                             Join Now
+                        </button>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-lg-3 " style="padding: 2%;" >
+                <div class="nationalcontentdiv">
+                    <div class="nationaimg_div" style="height:40%;border:10px solid rgb(255, 255, 255);border-radius: 25px;background-image: url('https://dkkospseva.com/img/Swami.jpeg');background-size: cover;background-position: center;">
+
+                    </div>
+                    <div class="national_writing" style="height:48%;align-content: center; padding: 3%;" >
+                         <h5 class="nationa_head" >
+                            Swami Vivekananda Seva Excellence Award
+                         </h5>
+                         <p class="nationa_writ" style="align-content: center;font-family: Poppins;">
+                                 The Swami Vivekananda Seva Excellence Award is an honor bestowed by our Organisation to individuals and organizations that have demonstrated exceptional dedication to social service and community development
+                         </p>
+                    </div>
+                    <div style="display: flex;justify-content: center;">
+                        <button class="nationa_btn">
+                             Join Now
+                        </button>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-lg-3 " style="padding: 2%;" >
+                <div class="nationalcontentdiv">
+                    <div class="nationaimg_div" style="height:40%;border:10px solid rgb(255, 255, 255);border-radius: 25px;background-image: url('https://dkkospseva.com/img/Swami.jpeg');background-size: cover;background-position: center;">
+
+                    </div>
+                    <div class="national_writing" style="height:48%;align-content: center; padding: 3%;" >
+                         <h5 class="nationa_head" >
+                            Swami Vivekananda Seva Excellence Award
+                         </h5>
+                         <p class="nationa_writ" style="align-content: center;font-family: Poppins;">
+                                 The Swami Vivekananda Seva Excellence Award is an honor bestowed by our Organisation to individuals and organizations that have demonstrated exceptional dedication to social service and community development
+                         </p>
+                    </div>
+                    <div style="display: flex;justify-content: center;">
+                        <button class="nationa_btn">
+                             Join Now
+                        </button>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-lg-3 " style="padding: 2%;" >
+                <div class="nationalcontentdiv">
+                    <div class="nationaimg_div" style="height:40%;border:10px solid rgb(255, 255, 255);border-radius: 25px;background-image: url('https://dkkospseva.com/img/Swami.jpeg');background-size: cover;background-position: center;">
+
+                    </div>
+                    <div class="national_writing" style="height:48%;align-content: center; padding: 3%;" >
+                         <h5 class="nationa_head" >
+                            Swami Vivekananda Seva Excellence Award
+                         </h5>
+                         <p class="nationa_writ" style="align-content: center;font-family: Poppins;">
+                                 The Swami Vivekananda Seva Excellence Award is an honor bestowed by our Organisation to individuals and organizations that have demonstrated exceptional dedication to social service and community development
+                         </p>
+                    </div>
+                    <div style="display: flex;justify-content: center;">
+                        <button class="nationa_btn">
+                             Join Now
+                        </button>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-lg-3 " style="padding: 2%;" >
+                <div class="nationalcontentdiv">
+                    <div class="nationaimg_div" style="height:40%;border:10px solid rgb(255, 255, 255);border-radius: 25px;background-image: url('https://dkkospseva.com/img/Swami.jpeg');background-size: cover;background-position: center;">
+
+                    </div>
+                    <div class="national_writing" style="height:48%;align-content: center; padding: 3%;" >
+                         <h5 class="nationa_head" >
+                            Swami Vivekananda Seva Excellence Award
+                         </h5>
+                         <p class="nationa_writ" style="align-content: center;font-family: Poppins;">
+                                 The Swami Vivekananda Seva Excellence Award is an honor bestowed by our Organisation to individuals and organizations that have demonstrated exceptional dedication to social service and community development
+                         </p>
+                    </div>
+                    <div style="display: flex;justify-content: center;">
+                        <button class="nationa_btn">
+                             Join Now
+                        </button>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-lg-3 " style="padding: 2%;" >
+                <div class="nationalcontentdiv">
+                    <div class="nationaimg_div" style="height:40%;border:10px solid rgb(255, 255, 255);border-radius: 25px;background-image: url('https://dkkospseva.com/img/Swami.jpeg');background-size: cover;background-position: center;">
+
+                    </div>
+                    <div class="national_writing" style="height:48%;align-content: center; padding: 3%;" >
+                         <h5 class="nationa_head" >
+                            Swami Vivekananda Seva Excellence Award
+                         </h5>
+                         <p class="nationa_writ" style="align-content: center;font-family: Poppins;">
+                                 The Swami Vivekananda Seva Excellence Award is an honor bestowed by our Organisation to individuals and organizations that have demonstrated exceptional dedication to social service and community development
+                         </p>
+                    </div>
+                    <div style="display: flex;justify-content: center;">
+                        <button class="nationa_btn">
+                             Join Now
+                        </button>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-lg-3 " style="padding: 2%;" >
+                <div class="nationalcontentdiv">
+                    <div class="nationaimg_div" style="height:40%;border:10px solid rgb(255, 255, 255);border-radius: 25px;background-image: url('https://dkkospseva.com/img/Swami.jpeg');background-size: cover;background-position: center;">
+
+                    </div>
+                    <div class="national_writing" style="height:48%;align-content: center; padding: 3%;" >
+                         <h5 class="nationa_head" >
+                            Swami Vivekananda Seva Excellence Award
+                         </h5>
+                         <p class="nationa_writ" style="align-content: center;font-family: Poppins;">
+                                 The Swami Vivekananda Seva Excellence Award is an honor bestowed by our Organisation to individuals and organizations that have demonstrated exceptional dedication to social service and community development
+                         </p>
+                    </div>
+                    <div style="display: flex;justify-content: center;">
+                        <button class="nationa_btn">
+                             Join Now
+                        </button>
+                    </div>
+                </div>
+                
+            </div>
+            
+
+        </div>
+    </div> -->
+    <!-- <div class="contact_us container-fluid">
+        <div class="row" style="border:1px solid red;height:100%;position: relative;">
+            <div class="col-lg-6" style="height: 100%;border:1px solid yellow;padding:2%;position: absolute;right:8%">
+                <div class="row" style="border:1px solid white;height:50%">
+                    <div class="col-lg-6" style="padding:3%">
+                        <div style="height:100%;width:100%;border:1px solid black;background-color:white ;">
+
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6" style="padding:3%">
+                        <div style="height:100%;width:100%;border:1px solid black;background-color:white ">
+
+                        </div>
+                        
+                    </div>
+
+
+                </div>
+                <div class="row" style="border:1px solid white;height:50%">
+                    <div class="col-lg-6" style="padding:3%">
+                        <div style="height:100%;width:100%;border:1px solid black;background-color:white ">
+
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6" style="padding:3%">
+                        <div style="height:100%;width:100%;border:1px solid black;background-color:white ">
+
+                        </div>
+                        
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="col-lg-6" style="height:100%;border:1px solid green;padding: 2%;">
+                <div style="border:1px solid white;height:100%;background-color:rgb(8, 117, 103)  ;">
+                    <form>
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                          
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputPassword1">Password</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </form>
+                </div>
+            </div>
+        </div>
+
+    </div> -->
+   
+   <div class="container-fluid contact-form left-img-con" >
+   <div class="row" style="height: 100%;">
+    
+    <h1 style="text-align: center;font-family: Cinzel;color:rgb(255, 196, 0) ;margin-top: 20px;">CONTACT</h1>
+   
+   <div class="col-lg-12" style="padding:4%;border-radius: 10px;display: flex;justify-content: center;">
+    
+    <div style="width:500px;height:100%;background-color: rgb(248, 248, 248);border-radius: 10px;padding: 2%;box-shadow: 10px 10px 10px black;">
+        <form>
+            <div class="mb-3">
+              
+              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Your Name">
+              
+            </div>
+            <br>
+            <div class="mb-3">
+              
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Your Phone Number">
+              
+            </div>
+            <br>
+            <div class="mb-3">
+              
+              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Your Email">
+              
+            </div>
+            <br>
+            <div class="mb-3">
+              
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Text Area"></textarea>
+            </div>
+            <br>
+          
+           <div style="display: flex;justify-content: center;align-items: center;">
+              <button type="submit" class="btn btn-primary" style="width:200px;height:40px;border: 10px;background-color: rgb(8, 117, 103);color:white">Submit</button>
+           </div>
+            
+          </form>
+    </div>
+   
+
+   </div>
+   <div >
+
+   </div>
+   </div>
+   
+   </div>
+   </div>
+   </div>
+
+   
+   
+    <section class="footer" style="margin-top: 4vh;">
+        <div class="footer-row">
+          <div class="footer-col">
+            <h4>Info</h4>
+            <ul class="links">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Compressions</a></li>
+              <li><a href="#">Customers</a></li>
+              <li><a href="#">Service</a></li>
+              <li><a href="#">Collection</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Explore</h4>
+            <ul class="links">
+              <li><a href="#">Free Designs</a></li>
+              <li><a href="#">Latest Designs</a></li>
+              <li><a href="#">Themes</a></li>
+              <li><a href="#">Popular Designs</a></li>
+              <li><a href="#">Art Skills</a></li>
+              <li><a href="#">New Uploads</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <ul class="links">
+              <li><a href="#">Customer Agreement</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">GDPR</a></li>
+              <li><a href="#">Security</a></li>
+              <li><a href="#">Testimonials</a></li>
+              <li><a href="#">Media Kit</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Newsletter</h4>
+            <p>
+              Subscribe to our newsletter for a weekly dose
+              of news, updates, helpful tips, and
+              exclusive offers.
+            </p>
+            <form action="#">
+              <input type="text" placeholder="Your email" required>
+              <button type="submit">SUBSCRIBE</button>
+            </form>
+            <div class="icons">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-linkedin"></i>
+              <i class="fa-brands fa-github"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+</body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js" integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  
+  loop: true,
+
+  // If we need pagination
+  
+  autoplay: {
+    delay: 1000,
+  },
+
+  slidesPerView: 1,
+  spaceBetween: 10,
+  // Responsive breakpoints
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 1,
+      spaceBetween: 30
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 4,
+      spaceBetween: 40
+    },
+    1000:{
+      slidesPerView: 4,
+      spaceBetween: 40 
+    },
+    1500:{
+      slidesPerView: 4,
+      spaceBetween: 40 
+    }
+
+  }
+});
+</script>
