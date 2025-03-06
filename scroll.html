@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Left, Scrollable Right</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .left-section {
+            width: 50%;
+            background-color: #2c3e50;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            height: 100vh;
+            left: 0;
+        }
+        .right-section {
+            width: 50%;
+            margin-left: 50%;
+            overflow-y: auto;
+            height: 100vh;
+            background-color: #ecf0f1;
+            padding: 20px;
+        }
+        .content {
+            height: 200vh; /* Just to enable scrolling */
+            background: linear-gradient(to bottom, #bdc3c7, #95a5a6);
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="left-section">
+        <h2>Fixed Left Section</h2>
+    </div>
+    <div class="right-section">
+        <div class="content">
+            <h2>Scrollable Right Section</h2>
+            <p>Scroll down to see the effect...</p>
+            <p>More content here...</p>
+            <p>Even more content...</p>
+        </div>
+    </div>
+</body>
+</html>

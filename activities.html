@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Left, Scrollable Right</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .left-section {
+            width: 50%;
+            background-color: rgb(8, 117, 103);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            height: 100vh;
+            left: 0;
+        }
+        .right-section {
+            width: 50%;
+            margin-left: 50%;
+            overflow-y: auto;
+            height: 100vh;
+            
+            padding: 20px;
+        }
+        .content {
+            height: 200vh; /* Just to enable scrolling */
+            
+            padding: 20px;
+        }
+        .main_vid2{
+            width:100%
+        }
+        .video_sec{
+        width:100%;
+        height:100%;
+        
+        padding: 0;
+    }
+    .writingdiv{
+        height: 100%;
+    position: absolute;
+    left: 0%; /* Initially offscreen */
+    top: 0;
+    width:50%; /* Adjust width as needed */
+    background-color: white;
+    transition: left 0.6s ; /* Smooth transition */
+    background-color: rgb(250, 192, 2) ;
+    opacity: 0.6;
+        
+    }
+    .act_img_div:hover ~ .writingdiv {
+    left: 50%;
+   
+}
+
+    </style>
+</head>
+<body>
+    <nav class="container-fluid d-lg-block d-none" style="height:100px;padding-left:5%;padding-right:5%;position: fixed;z-index: 9999;background-color: white;">
+        <div class="row" style="height:80px;">
+            <div class="col-lg-2" style="padding-left:1%;height:100%;padding-right: 1%;padding-top: 8px;padding-bottom: 8px;">
+               <div class="logo" style="height:100%;width:100%;border:1px solid white">
+                    Logo
+               </div>
+            </div>
+            <div class="col-lg-7" style="padding-left:2%;height:100%;padding-right: 2%;padding-top: 8px;padding-bottom: 8px;">
+                <div class="menu" style="height:100%;width:100%;border:1px solid white;background-color:rgb(8, 117, 103) ;color:white;border-radius: 50px;">
+                    <ul class="menu_content">
+                        <a href="index.html"><li >Home</li></a>
+                        <a href="about.html"><li>About</li></a>
+                        <li>Donation</li>
+                        <li>Srvices</li>
+                        <li>Conatct Us</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-1" style="padding-left:2%;height:100%;padding-right: 2%;padding-top: 8px;padding-bottom: 8px;">
+                <div class="search" style="height:60px;width:60px;border-radius: 100%;background-color: rgb(255, 196, 0);display: flex;justify-content: center;align-items: center;">
+                    <i class="fas fa-search" style="color:rgb(8, 117, 103)"></i>
+                </div>
+
+            </div>
+            <div class="col-lg-2" >
+               
+
+            </div>
+
+        </div>
+
+    </nav>
+    <div class="left-section">
+        <div class="container-fluid mainbanner">
+            <div class="row" style="height:100%">
+                <div class="video_sec">
+                    <video class="main_vid2" autoplay muted playsinline  loop="true">
+                        <source  src="images/Light Green and Dark Green Flood Victims NGO Financial Aid Instagram Post.mp4" type="video/mp4" >
+                       
+                    </video>
+                </div>
+    
+            </div>
+    
+        </div>
+    </div>
+    <div class="right-section">
+        <div class="content container">
+            <div class="row" style="height:200px;position: relative;">
+                <div  class="col-lg-6 act_img_div" style="height: 100%;padding: 0;z-index: 99;">
+                   <img  src="https://dkkospseva.com/img/seva_medical.jpeg" style="width:100%;height: 100%;">
+                </div>
+                <div class="col-lg-6 writingdiv" >
+                    <p style="color:white;font-size: 14px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum atque repellendus repellat assumenda officiis quo sunt nesciunt dolores obcaecati. Obcaecati illo enim tempora assumenda inventore accusantium tempore suscipit nemo vitae.</p>
+                    
+                </div>
+               
+                
+            </div>
+            <div class="row" style="height:200px;">
+                <div class="col-lg-6" style="height: 100%;">
+
+                </div>
+                <div class="col-lg-6" style="background-color: white;height: 100%;padding: 0;" >
+                    <img src="https://dkkospseva.com/img/about2.jpeg"  style="width:100%;height: 100%;">
+                    
+                </div>
+               
+                
+            </div>
+            <div class="row" style="height:200px;">
+                <div class="col-lg-6" style="background-color: white;height: 100%;padding: 0;">
+                    <img src="https://dkkospseva.com/img/about.jpeg"  style="width:100%;height: 100%;">
+
+                </div>
+                <div class="col-lg-6" style="height: 100%;">
+                    
+                </div>
+               
+                
+            </div>
+            <div class="row" style="height:200px;">
+                <div class="col-lg-6" style="height: 100%;">
+
+                </div>
+                <div class="col-lg-6" style="background-color: white;height: 100%;padding: 0;" >
+                    <img src="https://dkkospseva.com/img/ro.jpeg"  style="width:100%;height: 100%;">
+                </div>
+               
+                
+            </div>
+            <div class="row" style="height:200px;">
+                <div class="col-lg-6" style="background-color: white;height: 100%;padding: 0;" >
+                    <img src="https://dkkospseva.com/img/ag.jpeg"  style="width:100%;height: 100%;">
+                </div>
+                <div class="col-lg-6" style="height: 100%;">
+                    
+                </div>
+               
+                
+            </div>
+            <div class="row" style="height:200px;">
+                <div class="col-lg-6" style="height: 100%;">
+
+                </div>
+                <div class="col-lg-6" style="background-color: white;height: 100%;padding: 0;" >
+                    <img src="https://dkkospseva.com/img/culture.jpeg"  style="width:100%;height: 100%;">
+                </div>
+               
+                
+            </div>
+           
+        </div>
+    </div>
+</body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
