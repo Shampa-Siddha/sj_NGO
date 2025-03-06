@@ -22,9 +22,10 @@
        
     }
     .about_hero{
-        height:100vh;
+        
         
         margin-top: 20vh;
+        height:110vh;
     }
     .img1{
         position: absolute;
@@ -89,40 +90,59 @@ a{
     text-decoration: none;
     color: white;
 }
+@media (max-width: 992px) {
+    .about_hero{
+        
+        
+        margin-top: 20vh;
+        height:100vh;
+    }
+}
 </style>
 <body>
-    <nav class="container-fluid d-lg-block d-none" style="height:100px;padding-left:5%;padding-right:5%;position: fixed;z-index: 9999;background-color: white;">
+    <nav class="container-fluid" style="height:100px;padding-left:5%;padding-right:5%;position: fixed;z-index: 9999;background-color: white;">
         <div class="row" style="height:80px;">
             <div class="col-lg-2" style="padding-left:1%;height:100%;padding-right: 1%;padding-top: 8px;padding-bottom: 8px;">
-               <div class="logo" style="height:100%;width:100%;border:1px solid white">
+                <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+               <div class="logo" style="height:100%;width:100%;">
                     Logo
                </div>
+               
             </div>
             <div class="col-lg-7" style="padding-left:2%;height:100%;padding-right: 2%;padding-top: 8px;padding-bottom: 8px;">
                 <div class="menu" style="height:100%;width:100%;border:1px solid white;background-color:rgb(8, 117, 103) ;color:white;border-radius: 50px;">
-                    <ul class="menu_content">
-                        <a href="index.html"><li >Home</li></a>
+                    
+                    <ul class="menu_content" id="menuContent">
+                        <a href="index.html"><li>Home</li></a>
                         <a href="about.html"><li>About</li></a>
                         <li>Donation</li>
-                        <li>Srvices</li>
-                        <li>Conatct Us</li>
+                        <li>Services</li>
+                        <li>Contact Us</li>
                     </ul>
                 </div>
             </div>
-            <div class="col-lg-1" style="padding-left:2%;height:100%;padding-right: 2%;padding-top: 8px;padding-bottom: 8px;">
+            <div class="col-lg-1 mainsrch" style="padding-left:2%;height:100%;padding-right: 2%;padding-top: 8px;padding-bottom: 8px;">
                 <div class="search" style="height:60px;width:60px;border-radius: 100%;background-color: rgb(255, 196, 0);display: flex;justify-content: center;align-items: center;">
                     <i class="fas fa-search" style="color:rgb(8, 117, 103)"></i>
                 </div>
-
             </div>
-            <div class="col-lg-2" >
-               
-
-            </div>
-
+            <div class="col-lg-2"></div>
         </div>
-
     </nav>
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+        <div class="mobile-menu-content">
+            <div class="close-btn" onclick="toggleMenu()">
+                <i class="fas fa-times"></i> <!-- Cross icon -->
+            </div>
+            <ul>
+                <a href="index.html"><li>Home</li></a>
+                <a href="about.html"><li>About</li></a>
+                <li>Donation</li>
+                <li>Services</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+    </div>
     <div class="abthero" style="align-content: center;">
         
         <h1 style="color:white;text-align: center;">ABOUT US</h1>
@@ -135,14 +155,18 @@ a{
             <div class="col-lg-6" style="height:100%;display: flex;justify-content: center;align-items: center;">
 
                 <div style="width:80%;height:100%">
-                    <div class="missions" style="color:rgb(8, 117, 103);border-radius: 10px;padding: 2%;font-size: 14px;box-shadow: 5px 6px 15px -7px black;">
+                    <div class="missions" style="color:rgb(8, 117, 103);border-radius: 10px;padding: 2%;font-size: 13px;box-shadow: 5px 6px 15px -7px black;">
+                        <h6>ABOUT US</h6>
                         The dedicated Social Organization purely working for the development of our society through various Activities and Programmes also provide different Services to the people; specially for underprivileged section for the last 50 years with the Ideology & guideline of Sri Ajay Kumar Das, our beloved Founder.
                     </div>
-                    <div class="missions" style="color:rgb(8, 117, 103);border-radius: 10px;padding: 2%;font-size: 14px;margin-top: 25%;box-shadow: 5px 6px 15px -7px black;">
-                        Our mission is to empower individuals and communities through education, cultural preservation, sports, and social welfare initiatives. We strive to create a harmonious society by promoting values of humanity, inclusivity, and service to the underprivileged, fostering a brighter and more equitable future for all.
-                    </div>
-                    <div class="missions" style="color:rgb(8, 117, 103);border-radius: 10px;padding: 2%;font-size: 14px;margin-top: 30%;box-shadow: 5px 6px 15px -7px black;">
+                    <div class="missions" style="color:rgb(8, 117, 103);border-radius: 10px;padding: 2%;font-size: 13px;margin-top: 25%;box-shadow: 5px 6px 15px -7px black;">
+                        <h6>OUR VISION</h6>
                         Our vision is to build a compassionate and inclusive society where every individual has the opportunity to thrive, enriched by cultural heritage, supported by social welfare, and united by the spirit of humanity and service.
+                        
+                    </div>
+                    <div class="missions" style="color:rgb(8, 117, 103);border-radius: 10px;padding: 2%;font-size: 13px;margin-top: 30%;box-shadow: 5px 6px 15px -7px black;">
+                        <h6>OUR MISSION</h6>
+                        Our mission is to empower individuals and communities through education, cultural preservation, sports, and social welfare initiatives. We strive to create a harmonious society by promoting values of humanity, inclusivity, and service to the underprivileged, fostering a brighter and more equitable future for all.
                     </div>
 
                 </div>
@@ -361,6 +385,9 @@ window.addEventListener("scroll", () => {
 
 
 </script>
-
-    
-    
+<script>
+    function toggleMenu() {
+        const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+        mobileMenuOverlay.classList.toggle('active');
+    }
+</script>
